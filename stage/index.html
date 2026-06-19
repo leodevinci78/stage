@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+
+<title>Les 24H du Mans</title>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="style.css"/>
+
+<link rel="icon" type="image/x-icone" href="logo Mans.jfif">
+
+
+</head>
+
+<body>
+
+<!-- HEADER -->
+<div class="header d-flex align-items-center">
+ 
+  <h2 class="text-center m-0">🏁 Les 24H du Mans</h2>
+</div>
+
+<!-- CONTENU -->
+<div class="container mt-4">
+
+  <div class="card shadow p-4">
+
+    <h4 class="text-center text-danger mb-3">Bienvenue sur le site officiel</h4>
+
+    <p class="text-center">
+      Découvrez la célèbre course d’endurance automobile !
+    </p>
+
+    <div class="text-center mb-3">
+      <a href="https://www.youtube.com/watch?v=YW8xcqwmrEI" target="_blank" class="btn btn-danger btn-custom">
+        ▶ Voir les highlights 2026
+      </a>
+    </div>
+
+    <hr>
+
+    <h5>Sommaire :</h5>
+
+    <div class="d-grid gap-3">
+      <a class="btn btn-outline-primary btn-custom" href="histoire.html">📖 Histoire</a>
+      <a class="btn btn-outline-primary btn-custom" href="regle.html">⚙ Organisation</a>
+      <a class="btn btn-outline-primary btn-custom" href="vainqueurs.html">🏆 Vainqueurs</a>
+      <a class="btn btn-outline-primary btn-custom" href="3 categories de voiture .html">🚗 Types de voiture</a>
+      <a class="btn btn-outline-primary btn-custom" href="quiz.html">🧠 Quiz</a>
+    </div>
+
+    <hr>
+
+    <!-- Bouton gain -->
+    <div class="text-center mt-3">
+      <button id="gainBtn" class="btn btn-success btn-lg">
+        💰 Gagner 20$
+      </button>
+    </div>
+
+    <!-- Loader -->
+    <div class="text-center mt-3">
+      <a id="loader" class="btn btn-primary d-none" href="gagner.html">
+        <span class="spinner-border spinner-border-sm"></span>
+        Chargement...
+      </a>
+    </div>
+
+  </div>
+</div>
+
+<!-- FOOTER -->
+<div class="footer">
+  © 2026 - Site Les 24H du Mans
+</div>
+
+<!-- JS -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+<script>
+$("#gainBtn").click(function() {
+  $("#loader").removeClass("d-none");
+
+  setTimeout(function() {
+    window.location.href = "gagner.html";
+  }, 1500);
+});
+</script>
+<button id="darkModeBtn" class="btn btn-dark position-fixed top-0 end-0 m-3">
+  🌙 Mode nuit
+</button>
+<script>
+const btn = document.getElementById("darkModeBtn");
+
+btn.addEventListener("click", () => {
+  document.body.classList.toggle("dark-mode");
+});
+</script>
+</body>
+</html>

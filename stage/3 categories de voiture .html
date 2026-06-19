@@ -1,0 +1,88 @@
+<!DOCTYPE html >
+<html lang="fr" charset="utf-8">
+<head>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<link rel="stylesheet" href="style.css"/>
+
+
+
+
+<link rel="icon" type="image/x-icone" href="logo Mans.jfif">
+</head>
+<body>
+<!-- HEADER -->
+<div class="header d-flex align-items-center">
+ 
+  <h2 class="text-center m-0"> 🏎️ Les 3 catégories de voiture</h2>
+</div>
+
+<div class="container">
+
+<!-- CONTENU --><br>
+ <div class="row g-4">
+
+<div class="col-md-4">
+  <div class="card shadow h-100">
+    <img src="gt3.jpg" class="card-img-top" alt="GT3">
+    <div class="card-body">
+      <h5 class="card-title">LMGT3</h5>
+      <p class="card-text">
+        Catégorie Grand Tourisme basée sur les GT3 FIA (depuis 2024).  
+        Voitures dérivées de modèles de série (Ferrari, Porsche, BMW…).
+        <br><br>
+        <strong>Vitesse max :</strong> 300 km/h  
+        <br><strong>Poids :</strong> 1245 kg
+      </p>
+    </div>
+  </div>
+</div>
+<div class="col-md-4">
+  <div class="card shadow h-100">
+    <img src="lmp2.avif" class="card-img-top" alt="LMP3">
+    <div class="card-body">
+      <h5 class="card-title">LMP3</h5>
+      <p class="card-text">
+        Catégorie prototype d’entrée de gamme pour initier les pilotes à l’endurance.  
+        Permet de progresser vers LMP2 et Hypercar.
+		<br><br>
+		<strong>Vitesse max :</strong> 330 km/h
+		<br><strong>Poids :</strong> 1030 km/h
+      </p>
+    </div>
+  </div>
+</div>
+<div class="col-md-4">
+  <div class="card shadow h-100">
+    <img src="hypercar.jfif" class="card-img-top" alt="Hypercar">
+    <div class="card-body">
+      <h5 class="card-title">Hypercar</h5>
+      <p class="card-text">
+        Prototypes haut de gamme hybrides ou non.  
+        Utilisés par des équipes professionnelles.
+        <br><br>
+        <strong>Vitesse max :</strong> 340 km/h 
+        <br><strong>Poids :</strong> 1030 kg
+      </p>
+    </div>
+  </div>
+</div>
+<div class="container mt-4 d-flex gap-2">
+  <a class="btn btn-secondary" href="vainqueurs.html">⬅ Précédent</a>
+  <a class="btn btn-primary" href="index.html">🏠 Accueil</a>
+</div>
+</div>
+<button id="darkModeBtn" class="btn btn-dark position-fixed top-0 end-0 m-3">
+  🌙 Mode nuit
+</button>
+<script>
+const btn = document.getElementById("darkModeBtn");
+
+btn.addEventListener("click", () => {
+  document.body.classList.toggle("dark-mode");
+});
+</script>
+
+
+
+</body>
+</html>
